@@ -20,9 +20,10 @@ build:
 
 requirements:
   build:
+    - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - cmake >=3.15
-    - ninja
+    - make
     - pkg-config
   host:
     - python
@@ -32,7 +33,7 @@ requirements:
     - htslib
     - zlib
   run:
-    - python
+    - python >=3.9
     - click >=8.0
     - jinja2 >=3.0
     - htslib
@@ -53,6 +54,4 @@ about:
 
 extra:
   recipe-maintainers:
-    - mr-eyes
-  authors:
     - mr-eyes
