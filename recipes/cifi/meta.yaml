@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: UPDATE_AFTER_FIRST_RELEASE
+  sha256: "7609bd09adf60aa5f1083f39283ae16378fd9f938afaa6994385b47b32ee3de1"
 
 build:
   number: 0
@@ -38,8 +38,6 @@ requirements:
     - htslib
 
 test:
-  requires:
-    - pytest
   imports:
     - cifi
   commands:
@@ -55,4 +53,6 @@ about:
 
 extra:
   recipe-maintainers:
-    - mabuelanin
+    - mr-eyes
+  authors:
+    - mr-eyes
