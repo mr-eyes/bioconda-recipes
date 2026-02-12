@@ -1,5 +1,5 @@
 {% set name = "predictosaurus" %}
-{% set version = "0.8.0" %}
+{% set version = "0.8.2" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/fxwiegand/predictosaurus/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 35254fb42fe89a58ad6f206c5a74d87193098186899657e0845a85437801df00
+  sha256: 42f960def06dcb2070f534651a18176b23918d347cf241745cd87c3e6c69f1e1
 
 build:
   number: 0
